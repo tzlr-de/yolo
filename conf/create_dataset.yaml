@@ -1,0 +1,13 @@
+data:
+  images_root: null
+  backgrounds_root: null
+  glob_pattern: "*.png"
+
+dest: null
+
+subsets:
+  train: 3000
+  val: 100
+  test: 300
+
+output_size: [1280, 720]
