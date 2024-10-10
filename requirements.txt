@@ -1,0 +1,6 @@
+numpy>=1.26,<2
+ultralytics
+backgroundremover
+
+hydra-core
+structlog

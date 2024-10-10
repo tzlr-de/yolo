@@ -75,8 +75,11 @@ def main(cfg: DictConfig):
         if impath.name in cfg.data.exclude:
             logger.info(f'Skipping {impath}')
             continue
-
-        cls_name, idx = re.match(r"(\w+)_(\d+).png", impath.name).groups()
+        match = re.match(r"(\w+)_(\d+).png", impath.name)
+        if match is None:
+            logger.error(f"Failed to parse class and index from {impath.name}")
+            continue
+        cls_name, idx = match.groups()
         idx = int(idx)
 
 
