@@ -202,3 +202,4 @@ pyrightconfig.json
 outputs/
 runs/
 *.pt
+*.cache
