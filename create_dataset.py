@@ -17,9 +17,9 @@ from PIL import Image
 def main(cfg: DictConfig):
     global logger
 
-    assert cfg.data.images_root is not None, "images_root must be set"
-    assert cfg.data.backgrounds_root is not None, "backgrounds_root must be set"
-    assert cfg.dest is not None, "dest must be set"
+    assert cfg.data.images_root is not None, "Set data.images_root=<path to image crops>!"
+    assert cfg.data.backgrounds_root is not None, "Set data.backgrounds_root=<path to background images>!"
+    assert cfg.dest is not None, "Set dest=<path to save the dataset>!"
 
     images = list(Path(cfg.data.images_root).rglob(cfg.data.glob_pattern))
     classes = sorted(set([image.parent.name for image in images]))

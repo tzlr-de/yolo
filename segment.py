@@ -18,7 +18,7 @@ from tqdm.auto import tqdm
 
 def load_data(cfg: DictConfig, *, ordered: bool = True):
     global logger
-    assert cfg.data.root is not None, 'Data root is not specified!'
+    assert cfg.data.root is not None, 'Data root is not specified! Set it with data.root=<path>'
     paths = list(Path(cfg.data.root).rglob(cfg.data.glob_pattern))
     logger.info(f'Found {len(paths)} images')
     if ordered:
