@@ -1,0 +1,7 @@
+name: "train"
+epochs: 30
+batch_size: 0.8 # integer or fraction of total GPU memory
+optimizer: "auto" # "auto", "AdamW", "SGD", "RMSProp", etc.
+learning_rate: 0.001
+learning_rate_final: 0.01
+num_workers: 8

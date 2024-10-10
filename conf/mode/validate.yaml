@@ -1,0 +1,3 @@
+name: "validate"
+batch_size: 32 # integer only!
+num_workers: 8

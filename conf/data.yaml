@@ -1,0 +1,17 @@
+path: /data/datasets/groceries/output
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 8
+
+names:
+  - 'banana'
+  - 'bottle'
+  - 'carrot'
+  - 'coke'
+  - 'corn'
+  - 'milk'
+  - 'pepper'
+  - 'sauce'
